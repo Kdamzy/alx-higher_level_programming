@@ -5,8 +5,7 @@ class that define a Rectangle.
 
 
 class Rectangle:
-    """Class of Rectangle defined by width and height
-    """
+    """Class of Rectangle defined by width and height"""
 
     def __init__(self, width= 0, height= 0):
         """initialise the class"""
@@ -20,8 +19,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """set the format for the width
-        """
+        """set the format for the width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -30,14 +28,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieves the height of a Rectangle instance.
-        """
+        """Retrieves the height of a Rectangle instance."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Sets the height of a Rectangle
-        """
+        """Sets the height of a Rectangle"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:

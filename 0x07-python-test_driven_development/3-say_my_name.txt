@@ -1,0 +1,68 @@
+# 3-say_my_name.txt
+
+==============================
+test case for 3-say_my_name.py
+==============================
+
+A function ``say_my_name(first_name, last_name="")``.
+
+Usage
+=====
+
+``say_my_name(...)`` prints "My name is <first_name> <last_name>".
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Kehinde", "Olajide")
+    My name is Kehinde Olajide
+
+::
+
+    >>> say_my_name("Solomon Damilare", "Ayansola Skino")
+    My name is Solomon Damilare Ayansola Skino
+
+```last_name``` is optional. If no last name is provided,
+an empty string is printed.
+::
+
+    >>> say_my_name("Precious")
+    My name is Precious 
+
+Invalid Names
+=============
+
+The ``first_name`` and ``last_name``` must be strings.
+Otherwise, a TypeError is raised.
+
+::
+
+    >>> say_my_name(6, "Solo")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name("like", ["dog", "Maya", "JaCk"])
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+::
+
+    >>> say_my_name({"Max": 3, "Jack": 210}, 1.5)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+At least one name must be provided.
+
+::
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() 'first_name' missing

@@ -250,7 +250,7 @@ class TestBase_create(unittest.TestCase):
         self.assertNotEqual(r1, r2)
 
     def test_create_square(self):
-        s1 = Square(1, 5, 1, 3, 7)
+        s1 = Square(1, 5,  3, 7)
         s1_dictionary = s1.to_dictionary()
         s2 = Square.create(**s1_dictionary)
         self.assertEqual("[Square] (7) 5/1 - 3", str(s1))

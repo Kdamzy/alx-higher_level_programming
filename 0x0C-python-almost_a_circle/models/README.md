@@ -1,2 +1,0 @@
-SORTING ALGORITHMS
-------------------

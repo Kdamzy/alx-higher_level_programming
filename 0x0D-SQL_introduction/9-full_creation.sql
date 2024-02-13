@@ -1,4 +1,4 @@
--- Create table 'second_table' in db 'hbtn_0c_0'
+-- Create table second_table in the database
 CREATE TABLE IF NOT EXISTS second_table (id INT, name VARCHAR(256), score INT);
 
 -- create these record

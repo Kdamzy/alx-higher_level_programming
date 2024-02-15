@@ -1,6 +1,6 @@
 -- script that lists all shows, and all genres linked to that show
--- from the database hbtn_0d_tvshows.
-SELECT title, name FROM tv_shows
+SELECT title, name
+FROM tv_shows
 LEFT  JOIN tv_shows_genres
 ON tv_shows.id = tv_shows_genres.show_id
 LEFT JOIN tv_genres

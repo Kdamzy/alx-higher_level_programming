@@ -1,14 +1,14 @@
 #!/usr/bin/node
 
 /* Define a square that define a square and inherits from square */
-const subSquare = require('./5-square');
+const supSquare = require('./5-square');
 
-class Square extends subSquare {
+class Square extends supSquare {
   charPrint (c) {
-    if (c === null) {
+    if (c == null) {
       c = 'X';
     }
-    for (let i = 0; i < this.height; i++) {
+    for (let i = 0; i < this.width; i++) {
       console.log(c.repeat(this.width));
     }
   }

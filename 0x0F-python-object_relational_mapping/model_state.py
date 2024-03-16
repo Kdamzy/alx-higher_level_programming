@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """ file tha contains the class definition of a state """
+
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
+
 
 class State(Base):
 

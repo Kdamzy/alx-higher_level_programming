@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script that delete all state object that containing letter 'a' """
+""" script that delete all state object containing letter 'a' """
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)

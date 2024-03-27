@@ -21,4 +21,3 @@ def find_peak(list_of_integers):
         return find_peak(list_of_integers[:m])
     else:
         return find_peak(list_of_integers[m + 1:])
-    

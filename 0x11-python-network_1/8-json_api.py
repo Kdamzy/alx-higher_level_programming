@@ -9,9 +9,9 @@ import requests
 
 if __name__ == "__main__":
     letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
+    pargs = {"q": letter}
 
-    request = requests.post("http://0.0.0.0:5000/search_user", data=payload)
+    request = requests.post("http://0.0.0.0:5000/search_user", data=pargs)
     try:
         response = request.json()
         if response == {}:

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Sends a POST request to a URL with a given email"""
+
 import sys
 import urllib.parse
 import urllib.request

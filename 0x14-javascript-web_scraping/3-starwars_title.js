@@ -2,8 +2,8 @@
 // Print the title of Star wars movie
 
 const request = require('request');
-const movie_id = process.argv[2];
-const url = `https://swapi-api.alx-tools.com/api/films/${movie_id}`;
+const movieid = process.argv[2];
+const url = `https://swapi-api.alx-tools.com/api/films/${movieid}`;
 
 request.get(url, (error, response, body) => {
   if (error) {

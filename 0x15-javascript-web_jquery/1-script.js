@@ -1,2 +1,2 @@
-// set the text color of header to red
+// update the text color to red
 $('header').css('color', '#FF0000');
